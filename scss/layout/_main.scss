@@ -1,0 +1,103 @@
+#main-content{
+	padding:40px;
+	@extend %clearfix;
+	background: $bg-color--super-light-grey;
+
+	.secondary-headline{
+		@include font-size(29px);
+		color: $secondary-heading-colour;
+	}
+
+	.content-list{
+		border-top: 1px solid $main-content-separator-color;
+
+		&__item{
+			border-bottom: 1px solid $main-content-separator-color;
+			@extend %clearfix;
+		}
+
+		&__item:last-child{
+			border-bottom: 0;
+		}
+	}
+
+	.see-all{
+		@include font-size(14px);
+		color: $white-colour;
+		float: right;
+		padding: 10px;
+		background: $bg-color--black;
+		margin-top: 35px;
+	}
+
+	.message{
+		@include font-size(12px);
+		color: $warning-message-color;
+		text-align: center;
+		clear: both;
+		padding: 55px 10px 15px
+	}
+
+}
+
+@include deskop_tablets{
+
+	#main-content{
+
+		.content-list{
+
+			&__item{
+
+				.info{
+
+					&__summary{
+						width: 50%
+					}
+				}
+			}
+		}
+
+		.see-all{
+			float: left;
+		}	
+	}
+}
+
+@include phone{
+
+	#main-content{
+		padding:20px;
+
+		.content-list{
+
+			&__item{
+
+				.info{
+					padding-right: 0;
+
+					&__summary, &__times{
+						margin-top:15px;
+					}
+
+					&__summary{
+						width: 70%;
+
+						.desc{
+								@include font-size(12px);
+								margin-right: 0;
+								padding-right: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		.see-all{
+			float: left;
+		}
+
+	}
+}
+
+
+

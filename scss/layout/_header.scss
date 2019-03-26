@@ -1,0 +1,92 @@
+.header{
+	@extend %clearfix; 
+	margin-top: 30px;
+	@include linearGradient($bg-color--light-blue, $bg-color--mild-blue);
+	padding: 40px 10px;
+	color: $white-colour;
+	 
+	.nav--main{
+		float: left;
+		margin-left: 22%;
+
+		&__item{
+			display: inline-block;
+			border-right: 1px solid $nav-header-separator-color;
+			@include font-size($text-size--small);
+			padding: 10px 30px 10px 30px;
+		}
+
+		&__item:last-child{
+			border-right: 0;
+		}
+	}
+ 
+	.search{
+		float: right;
+		position: relative;
+		width: 300px;
+
+		&__field{
+			width: 300px;
+			padding:10px 25px 10px 5px;
+		}
+
+		&:after{
+			background: url(../img/search-ico1.gif) no-repeat center;
+			display: inline-block;
+			content: "";
+			padding-right: 29px;
+			padding-left: 8px;
+			width: 0px;
+			height: 36px;
+			margin-left: 16px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			cursor:pointer;
+		}
+	}
+}
+
+@include deskop_tablets{
+
+	.header{
+		
+		.nav--main{
+			margin-left: 0;
+		}
+	}
+
+}
+
+@include phone{
+
+	.header{
+		padding-top: 20px;
+
+		.nav--main{
+			margin-left: 0;
+			margin: 0 auto;
+			width: 100%;
+			padding-bottom: 40px;
+
+			&__item{
+				display: block;
+				border-right: 0;
+				border-bottom: 1px solid $nav-header-separator-color;
+				text-align: center;
+			}
+		}
+
+		.search{
+			width: 100%;
+
+			&__field{
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+

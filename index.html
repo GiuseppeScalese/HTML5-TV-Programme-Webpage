@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website demo</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internet Explorer 8 or older versions doesn't support CSS3 media queries. I enable it by importing css3-mediaqueries.js Javascript file. -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->  
+
+<!-- importing custom css -->
+<link rel="stylesheet" href="./css/main.css"/>
+
+</head> 
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <ul class="nav nav--main">
+        <li class="nav__item nav--main__item">
+            <a class="nav__link" href="#">Home</a>
+        </li>
+
+        <li class="nav__item nav--main__item">
+            <a class="nav__link" href="#">Schedule</a>
+        </li>
+
+        <li class="nav__item nav--main__item">
+            <a class="nav__link" href="#">All Shows</a>
+        </li>
+      </ul>
+      <form class="search" action="/somesearchaction" name="search" method="get">   
+        <input class="search__field" title="Please enter what to be searched" placeholder="Search" type="text">
+      </form>  
+    </header>
+
+    <div id="preview">
+        <div class="info">
+          <h1 class="info__heading">Emmerdale</h1>
+          <div class="info__summary">
+            <span class="date">Friday 26 Jun 7:00pm</span>
+            <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+          </div>
+          <div class="info__times">
+            <span class="time icon-time">22m</span>
+            <span class="days-left icon-calendar">28 days</span>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero-media">
+             <img class="hero-media__video" src="./img/hero.png" alt="Emmerdale next episode"/>
+        <!--     <div class="hero-media__play"></div> -->
+          </div>
+          <div class="hero-ad">
+             <img class="hero-ad__image" src="./img/ad.jpg" alt="some advert"/>
+          </div>
+        </div>
+    </div>
+
+     <div id="main-content">
+        <h2 class="secondary-headline">More Episodes</h2> 
+        <ul class="content-list">
+          <li class="content-list__item">
+            <div class="info info--more">
+              <div class="info__preview">
+                <a class="info__link" title="Watch the next episode of Emmerdale" href="#"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Emmerdale</h3>
+                <span class="date">Tuesday 21 Jun 1:00pm</span>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="time icon-time">22m</span>
+                <span class="days-left icon-calendar">28 days</span>
+              </div>
+            </div>     
+          </li>
+
+          <li class="content-list__item">
+            <div class="info info--more">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Emmerdale</h3>
+                <span class="date">Monyda 26 Sep 9:00pm</span>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="time icon-time">22m</span>
+                <span class="days-left icon-calendar">8 days</span>
+              </div>
+            </div>     
+          </li>
+
+          <li class="content-list__item">
+            <div class="info info--more">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Emmerdale</h3>
+                <span class="date">Friday 26 Jun 7:00pm</span>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="time icon-time">21m</span>
+                <span class="days-left icon-calendar">2 days</span>
+              </div>
+            </div>          
+          </li>
+
+          <li class="content-list__item">
+            <div class="info info--more">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Emmerdale</h3>
+                <span class="date">Wednesday 29 Jun 7:00pm</span>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="time icon-time">44m</span>
+                <span class="days-left icon-calendar">30 days</span>
+              </div>
+            </div>          
+          </li>
+        </ul>
+        <a class="see-all icon-page-v2" href="#" title="Go to page to see all available episodes">See all available episodes</a>
+        <div class="message">Due to broadcast rights, this show is not available in your region.</div>
+     </div>
+
+     <div id="secondary-content">
+      <h2 class="secondary-headline">Drama & Soaps</h2> 
+
+      <ul class="content-list">
+          <li class="content-list__item">
+            <div class="info info--others">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Emmerdale</h3>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="date">Friday 15 Feb 7:00pm</span>
+                <span class="days-left icon-calendar">59 days</span>
+                <span class="time icon-time">40m</span>
+              </div>
+            </div>     
+          </li>
+              <li class="content-list__item">
+            <div class="info info--others">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Home Fires</h3>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="date">Sunday 15 Jan 7:00pm</span>
+                <span class="days-left icon-calendar">29 days</span>
+                <span class="time icon-time">42m</span>
+              </div>
+            </div>     
+          </li>
+              <li class="content-list__item">
+            <div class="info info--others">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Blac Work</h3>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="date">Tuesday 25 Dec 9:00pm</span>
+                <span class="days-left icon-calendar">19 days</span>
+                <span class="time icon-time">42m</span>
+              </div>
+            </div>     
+          </li>
+          <li class="content-list__item">
+            <div class="info info--other-alternative">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+                <div class="info__date">Wednesday 5 Dec 7:00pm</div>
+                
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Doc Martin</h3>
+                <p class="desc">Debbie is drown to Ross. Marlon suggests Laurel comes home. Aaron fears Cain is a loose cannon.</p>
+              </div>
+              <div class="info__times">
+                <span class="days-left icon-calendar">9 days</span>
+                <span class="time icon-time">22m</span>
+            
+              </div>
+            </div>     
+          </li>
+        </ul>
+     </div>
+
+     <div id="featured-content">
+      <h2 class="secondary-headline">Recommended</h2> 
+      <ul class="content-list">
+          <li class="content-list__item">
+            <div class="info info--others">
+              <div class="info__preview">
+                <a class="info__link" href="#" title="Watch the next episode of Emmerdale"><img class="preview-img" src="./img/programme.png" alt="Emmerdale further episodes"/></a>
+              </div>
+              <div class="info__summary">
+                <h3 class="summary-headline">Coronation Street</h3>
+                <p class="desc">Tracy guilt weights heavy. Who is watching Bethany? 
+                  Desperate Jenny is forced to rethink her plan.</p>
+              </div>
+              <div class="info__times">
+                <span class="date">Friday 15 Feb 7:00pm</span>
+                <span class="days-left days-left--warning icon-calendar">9 hours</span>
+                <span class="time icon-time">40m</span>
+              </div>
+            </div>     
+          </li>
+        </ul>
+     </div>
+
+     <footer id="footer">
+      <div class="footer-box">
+        <div class="footer-box__info">
+          <p>Copyright 2015 Player Ltd. <br/> All rights reserved.</p>
+        </div>
+        <div class="footer-box__links">
+           <p class="conditions">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. <br/><br/> Of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap</p>
+          <ul class="footer-links">
+            <li class="footer-links__item"><a class="footer-links__link" href="#">Privacy Policy</a></li>
+            <li class="footer-links__item"><a class="footer-links__link" href="#">Terms and Condition</a></li>
+            <li class="footer-links__item"><a class="footer-links__link" href="#">FAQs</a></li>
+            <li class="footer-links__item"><a class="footer-links__link" href="#">Accessibility</a></li>
+            <li class="footer-links__item"><a class="footer-links__link" href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-box__social">
+          <ul class="social-links">
+            <li class="social-links__item"><span class="media-icon icon-twitter"></span><a class="social-links__link" href="#">@Player</a></li>
+            <li class="social-links__item"><span class="media-icon icon-facebook"></span><a class="social-links__link" href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+     </footer>
+      
+  </div>
+
+  <!-- importing jquery library -->
+  <script src="./js/jquery-1.11.2.min.js" ></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,16 @@
+@include font-face-icomoon($custom-icons, "../fonts", $custom-icons);
+@include font-face($custom-font-one, "../fonts", $custom-font-one);
+@include font-face($custom-font-two, "../fonts", $custom-font-two);
+
+body{
+  color:$primary-color;
+  background: $bg-color--light-grey;
+  font-family: FSAlbertWeb-Regular, $base-font-family;
+} 
+
+#wrapper{
+  max-width: $desktop-screen--large;
+  margin: 0 auto;  
+  width: 95%;
+  background: $bg-color--white;
+}

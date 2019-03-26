@@ -1,0 +1,90 @@
+#preview{
+
+	.hero{
+		background: $bg-color--night-blue;
+		@extend %clearfix; 
+
+		.hero-ad{
+			float: left;
+			padding: 30px;
+
+			&__image{
+				width: 240px;
+				max-width: 100%;	
+    			height: auto;
+			}
+		}
+
+		.hero-media{ 
+			padding: 30px 0;
+			float: left;
+			
+			&__video{
+				width: 550px;
+				max-width: 100%;	
+    			height: auto;
+			}
+		}
+	}
+}
+
+@include deskop_tablets{
+
+	#preview{
+
+		.hero{
+
+			.hero-media{ 
+				width: 100%;
+			}
+
+			.hero-ad{
+				padding: 10px 20px 10px 0;
+			}
+		}
+	}
+}
+
+@include phone{
+
+	#preview{
+
+		.hero{
+
+			.hero-media{ 
+				padding: 30px 0 10px 0;
+				
+				&__video{	
+					width: 320px;		
+				}
+			}
+
+			.hero-ad{
+				padding: 20px;
+				width: 50%
+			}
+		}
+
+		.info{
+			padding: 20px;
+
+			&__summary{
+				width: 100%;
+				border-right:0;
+			}
+
+			&__times{
+				padding-top: 5px;
+				padding-left: 0;
+
+				.time{
+					display: inline;
+					padding-right: 10px;
+				}
+			}
+		}
+	}	
+}
+
+
+

@@ -1,0 +1,19 @@
+// main.scss
+@import 'utils/_variables.scss';
+
+@import 'base/_mixins.scss';
+@import 'base/_reset.scss'; 
+@import 'base/_base.scss';
+
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+@import 'layout/_secondary.scss';
+@import 'layout/_featured.scss';
+@import 'layout/_preview.scss';
+@import 'layout/_footer.scss';
+
+@import 'module/_buttons.scss';
+@import 'module/_forms.scss';
+@import 'module/_text.scss';
+@import 'module/_info.scss';
+

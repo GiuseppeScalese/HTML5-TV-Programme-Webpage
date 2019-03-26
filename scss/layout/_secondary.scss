@@ -1,0 +1,108 @@
+#secondary-content, #featured-content{
+	padding:40px;
+	@extend %clearfix;
+	background: $bg-color--white;
+
+	.secondary-headline{
+		@include font-size(29px);
+		color: $secondary-heading-colour;
+		font-family: FSAlbertWeb-Regular;
+	}
+
+	.content-list{
+		
+		&__item{
+			@extend %clearfix;
+		}
+	}
+}
+
+@include deskop_tablets{
+ 
+	#secondary-content, #featured-content{
+
+		.content-list{
+
+			&__item{
+
+				.info{
+					padding: 5px;
+
+					&__summary{
+						width: 72%;
+					}
+
+					&__preview{
+						padding-bottom: 20px;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+@include phone{
+
+	#secondary-content, #featured-content{
+		padding: 20px;
+
+		.content-list{
+
+			&__item{
+
+				.info{
+					padding: 5px;
+
+					&__summary{
+						width: 100%;
+						
+						.desc{
+							@include font-size(12px);
+							margin-right: 0;
+							padding-top: 0;
+						}
+					}
+
+					&__preview{
+						padding-bottom: 20px;
+					}
+
+					&__times{
+						margin:5px;
+						@include font-size(12px);
+						width: 100%;
+
+						.date{
+							display: block;
+							padding-bottom: 15px;
+						}
+
+						.days-left{
+							padding-left: 0;
+							float: none;
+						}
+
+						.time{
+							float: left;
+							padding-right: 5px;
+						}
+
+						.icon-time{
+	
+							&:before{
+								margin-left: 0;
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+
+}
+
+
+

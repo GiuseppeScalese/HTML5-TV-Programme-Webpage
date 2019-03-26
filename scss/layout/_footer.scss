@@ -1,0 +1,128 @@
+#footer{
+	padding:40px;
+	@extend %clearfix;
+	background: $bg-color--very-dark-blue;
+	margin-bottom: 30px;
+
+	.footer-box{
+
+		&__info{
+			float: left;
+			width: 25%;
+
+			p{
+				@include font-size($text-size--x-small);
+				color: $copyright-color--very-light-grey;
+			}
+		}
+
+		&__links{
+			float: left;
+			padding:0 20px;
+			width: 52%;
+			border-left: 1px solid $preview-separator-color;
+			border-right: 1px solid $preview-separator-color;
+
+			.conditions{
+				@include font-size(13px);
+				float: left;
+				width: 60%;
+				margin-right: 15px;
+			}
+
+			.footer-links{
+				float: left;
+
+				&__item{
+					padding-bottom: 10px;
+				}
+
+				&__link{
+					color: $anchor-color--light-blue;
+					@include font-size(13px);
+					text-decoration: underline;
+				}
+
+				&__link:hover{
+					color:$anchor-footer-hover-color;
+				}
+			}
+		}
+
+		&__social{
+			width: 23%;
+			float: left;
+			padding-left: 20px;
+
+			.social-links{
+
+				&__item{
+					padding-bottom: 10px;
+
+					.media-icon{
+						color: $white-colour;
+					}
+				}
+
+				&__link{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+@include deskop_tablets{
+
+	#footer{
+
+		.footer-box{
+
+			&__links{
+
+				.conditions{	
+					width: 100%;
+				}
+
+				.footer-links{
+					padding-top: 15px;
+
+				}
+			}
+		}
+	}
+}
+
+@include phone{
+
+	#footer{
+		padding:20px;
+
+		.footer-box{
+
+			&__info, &__links, &__social{
+				width: 100%;
+			}
+
+			&__links{
+				border: 0;
+				padding: 15px 0;
+
+				.conditions{
+					width: 100%;
+				}
+			}
+
+			&__social{
+				padding: 10px 0;
+
+				.social-links{
+					display: inline;
+				}
+			}
+		}
+	}
+}
+
+
+
